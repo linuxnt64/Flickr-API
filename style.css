@@ -3,7 +3,7 @@
 body{
     background-color:blanchedalmond;
     margin: 2rem auto;
-    max-width: 800px;
+    max-width: 1000px;
     }
 
 header {
@@ -14,13 +14,24 @@ nav {
     text-decoration: none;
     color: #666;
     flex: 1;
+    flex-direction: column;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start !important;
     align-items: center;
 }
 
 main {
-    grid-template-columns: repeat(2, 1fr);
-    grid-column: auto /span 2;
     display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 0.5rem;
+}
+
+main .generalInfo {
+    text-align: center;
+    
+    grid-column: auto / span 4;
+}
+
+.images {
+    grid-column: auto / span 3;
 }
