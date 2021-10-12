@@ -1,24 +1,17 @@
 /* style.css */
 
 body{
-    background-color:blanchedalmond;
+    background-color:cornsilk;
     margin: 2rem auto;
     max-width: 1000px;
     }
 
 header {
+    font-family: 'Pacifico' , cursive;
     text-align: center;
+
 }
 
-nav {
-    text-decoration: none;
-    color: #666;
-    flex: 1;
-    flex-direction: column;
-    display: flex;
-    justify-content: flex-start !important;
-    align-items: center;
-}
 
 main {
     display: grid;
@@ -34,4 +27,16 @@ main .generalInfo {
 
 .images {
     grid-column: auto / span 3;
+}
+
+nav {
+    grid-column: auto / span 2;
+    text-decoration: none;
+    background-color:blanchedalmond;
+    color: #666 !important;
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items:left;
 }
