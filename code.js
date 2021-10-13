@@ -9,7 +9,7 @@ else if (currentWidth >= 400 && currentWidth < 550) {
 else {sizeCode = "m"} ;
 
 
-
+ 
 getPictures(searchTerm);
 
 async function getPictures() {
