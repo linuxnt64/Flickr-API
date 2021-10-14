@@ -7,7 +7,6 @@ if (currentWidth < 400)                             { var sizeCode = "s"}
 else if (currentWidth >= 400 && currentWidth < 550)     { sizeCode = "q"}
 else if (currentWidth >= 550 && currentWidth <800 )     { sizeCode = "m"}
 else                                                    { sizeCode = "n"} ;
-console.log(currentWidth, sizeCode, "s<400 q<550 550<m 800<n");
 
 getPictures(searchTerm);
 
