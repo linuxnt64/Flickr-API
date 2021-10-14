@@ -1,20 +1,19 @@
 // code.js 
 const currentWidth = document.documentElement.clientWidth
 const photos = document.querySelector('#photoList');
-const searchTerm = "dogfood";
+const searchTerm = "dogs";
 
-if (currentWidth < 400) { var sizeCode = "s"}
-else if (currentWidth >= 400 && currentWidth < 550) {
-    sizeCode = "q"}
-else {sizeCode = "m"} ;
-
+if (currentWidth < 400)                             { var sizeCode = "s"}
+else if (currentWidth >= 400 && currentWidth < 550)     { sizeCode = "q"}
+else if (currentWidth >= 550 && currentWidth <800 )     { sizeCode = "m"}
+else                                                    { sizeCode = "n"} ;
+console.log(currentWidth, sizeCode, "s<400 q<550 550<m 800<n");
 
 getPictures(searchTerm);
 
 async function getPictures() {
     const response = await fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=04d92623552bfe67ac4103624c4b9d61&tags=Dogfood&per_page=4&page=1&format=json&nojsoncallback=1`);
     const data = await response.json();
-    //console.log(data);
     showPhotos(data.photos.photo);
 }
 
