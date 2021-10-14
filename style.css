@@ -53,9 +53,9 @@ nav {
     border-bottom-left-radius: 2rem;
 }
 
-
 nav a {
     text-decoration: none;
+    color:rgb(2, 56, 2)
     
 }
 ul {
@@ -63,7 +63,7 @@ ul {
     padding-left: 0.5rem;
     line-height: 2rem;
     font-family: sans-serif;
-    color:rgb(2, 56, 2)
+    
 }
 
 .images {

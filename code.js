@@ -9,7 +9,6 @@ else if (currentWidth >= 400 && currentWidth < 550) {
 else {sizeCode = "m"} ;
 
 
- 
 getPictures(searchTerm);
 
 async function getPictures() {
@@ -21,11 +20,9 @@ async function getPictures() {
 
 
 const showPhotos = array => {
-    console.log(array);
     array.forEach(photo => {
         const item = document.createElement('li');
         
-        console.log(currentWidth, sizeCode);
         item.innerHTML = `<img src="https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_${sizeCode}.jpg" alt="${photo.title}">`;
         photos.appendChild(item);
     });
