@@ -12,8 +12,14 @@ header {
     height: auto;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
-    font-family: italic, cursive;
     font-size: 2vw;
+    font-family: italic, cursive;
+}
+
+header h1 {
+    grid-column: 2/5;
+    padding-left: 2vw;
+    color:darkslategrey;
     text-align: center;
 }
 
@@ -24,15 +30,8 @@ header img {
 }
 main {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 0.5rem;
-}
-
-header h1 {
-    grid-column: 2/5;
-    align-items:left;
-    padding-left: 2vw;
-    color:darkslategrey;
 }
 
 h2 {
@@ -88,7 +87,6 @@ ul {
     font-size: 3.5vw;
     border-radius: 2rem;
     list-style: none;
-    margin-block-start: 1em;
 }
 ul li {
     padding-bottom: 2vw;
@@ -96,13 +94,14 @@ ul li {
 
 .images {
     grid-column: auto / span 1;
+    text-align:center;
 }
 
-footer{
+footer {
     text-align: center;
 }
 
-footer h4{
-        font-family: serif;
+footer h4 {
+        font-family: cursive;
         font-size:2vw;
 }
