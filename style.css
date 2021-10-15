@@ -4,7 +4,7 @@ body {
     max-width: 1200px;
     min-width: 320px;
     background-color:rgb(255, 252, 240);
-    margin: 2rem auto;
+    margin: 0;
     }
 
 header {
@@ -12,21 +12,24 @@ header {
     height: auto;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
-    font-size: 2vw;
-    font-family: italic, cursive;
 }
 
 header h1 {
+    font-family: italic, cursive;
+    font-size: 4vw;
     grid-column: 2/5;
-    padding-left: 2vw;
+    padding-top: 6vw;
     color:darkslategrey;
-    text-align: center;
 }
 
 header img {
-    width: 20vw;
-    padding-left: 2vw;
-    padding-bottom: 2vw;
+    width: 15vw;
+/*     margin-left: 2vw;
+    margin-bottom: 2vw;
+ */    margin: 1vw;
+    border-style: solid;
+    border-radius: 2vw;
+    border-color:lightgray;
 }
 main {
     display: grid;
