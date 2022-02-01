@@ -11,7 +11,7 @@ else                                                { sizeCode = "m" };
 getPictures(searchTerm);
 
 async function getPictures() {
-    const response = await fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=04d92623552bfe67ac4103624c4b9d61&tags=Dogfood&per_page=16&page=1&format=json&nojsoncallback=1`);
+    const response = await fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=04d92623552bfe67ac4103624c4b9d61&tags=Dogfood&per_page=4&page=1&format=json&nojsoncallback=1`);
     const data = await response.json();
     showPhotos(data.photos.photo);
 }
