@@ -3,10 +3,10 @@ const currentWidth = document.documentElement.clientWidth
 const photos = document.querySelector('#photoList');
 const searchTerm = "dogs";
 
-if (currentWidth < 400) { var sizeCode = "s" }
+if (currentWidth < 400)                         { var sizeCode = "s" }
 else if (currentWidth >= 400 && currentWidth < 550) { sizeCode = "t" }
 else if (currentWidth >= 550 && currentWidth < 800) { sizeCode = "q" }
-else { sizeCode = "m" };
+else                                                { sizeCode = "m" };
 
 getPictures(searchTerm);
 
@@ -21,9 +21,8 @@ const showPhotos = array => {
     array.forEach(photo => {
         const item = document.createElement('li');
         item.innerHTML = `<img src="https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_${sizeCode}.jpg" alt="${photo.title}">`;
-        if ( photo.id == 51467498709 || photo.id == 51467712075 || photo.id == 51466763306 ) {
-            photos.appendChild(item)
-        };
+//        if ( photo.id == 51467498709 || photo.id == 51467712075 || photo.id == 51466763306 ) {
+            photos.appendChild(item)        ;
     });
 }
 
